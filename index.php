@@ -241,7 +241,7 @@
 						<div class="bar-chart">
 							<?php setupHorizontalBar('Top Management', 15); ?>
 
-							<?php setupHorizontalBar('Middle management', 22); ?>
+							<?php setupHorizontalBar('Middle Management', 22); ?>
 
 							<?php setupHorizontalBar('Lower Management', 30); ?>
 
@@ -365,55 +365,16 @@
 						</div>
 
 						<div class="bar-chart">
-							<div class="bar">
-								<p>Top Management</p>
+							<?php setupHorizontalBar('Top Management', 21); ?>
 
-								<div class="row">
-									<div class="left" data-value="21"><p></p></div>
+							<?php setupHorizontalBar('Middle Management', 31); ?>
 
-									<div class="right" data-value="79"><p></p></div>
-								</div>
-							</div>
+							<?php setupHorizontalBar('Lower Management', 39); ?>
 
-							<div class="bar">
-								<p>Middle Management</p>
+							<?php setupHorizontalBar('Lowest Management', 45); ?>
 
-								<div class="row">
-									<div class="left" data-value="31"><p></p></div>
+							<?php setupHorizontalBar('Non Management', 59); ?>
 
-									<div class="right" data-value="69"><p></p></div>
-								</div>
-							</div>
-
-							<div class="bar">
-								<p>Lower Management</p>
-
-								<div class="row">
-									<div class="left" data-value="39"><p></p></div>
-
-									<div class="right" data-value="61"><p></p></div>
-								</div>
-							</div>
-
-							<div class="bar">
-								<p>Lowest Management</p>
-
-								<div class="row">
-									<div class="left" data-value="45"><p></p></div>
-
-									<div class="right" data-value="55"><p></p></div>
-								</div>
-							</div>
-
-							<div class="bar">
-								<p>Non Management</p>
-
-								<div class="row">
-									<div class="left" data-value="59"><p></p></div>
-
-									<div class="right" data-value="41"><p></p></div>
-								</div>
-							</div>
 						</div> <!-- /Bar-Chart -->
 					</div> <!-- /Chart -->
 				</section> <!-- /Topic 1.3 -->
@@ -650,25 +611,10 @@
 						</div>
 
 						<div class="bar-chart">
-							<div class="bar">
-								<p>Promotions</p>
+							<?php setupHorizontalBar('Promotions', 36); ?>
 
-								<div class="row">
-									<div class="left" data-value="36"><p></p></div>
+							<?php setupHorizontalBar('Employees', 40); ?>
 
-									<div class="right" data-value="64"><p></p></div>
-								</div>
-							</div>
-
-							<div class="bar">
-								<p>Employees</p>
-
-								<div class="row">
-									<div class="left" data-value="40"><p></p></div>
-
-									<div class="right" data-value="60"><p></p></div>
-								</div>
-							</div>
 						</div> <!-- /Bar-Chart -->
 					</div> <!-- /Chart -->
 				</section> <!-- /Topic 4.1 -->
@@ -689,25 +635,10 @@
 						</div>
 
 						<div class="bar-chart">
-							<div class="bar">
-								<p>Promotions to Management</p>
+							<?php setupHorizontalBar('Promotions to Management', 42); ?>
 
-								<div class="row">
-									<div class="left" data-value="42"><p></p></div>
+							<?php setupHorizontalBar('Employees in Non-Management', 51); ?>
 
-									<div class="right" data-value="58"><p></p></div>
-								</div>
-							</div>
-
-							<div class="bar">
-								<p>Employees in Non-Management</p>
-
-								<div class="row">
-									<div class="left" data-value="51"><p></p></div>
-
-									<div class="right" data-value="49"><p></p></div>
-								</div>
-							</div>
 						</div> <!-- /Bar-Chart -->
 					</div> <!-- /Chart -->
 				</section> <!-- /Topic 4.2 -->

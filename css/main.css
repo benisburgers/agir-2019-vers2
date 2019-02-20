@@ -5187,6 +5187,35 @@ footer .luxxi {
   margin-top: 30px;
 }
 
+.dark-bg a {
+  color: white;
+}
+.dark-bg .legend span {
+  color: #999999 !important;
+}
+.dark-bg .bar-chart .bar > p {
+  color: #999999 !important;
+}
+.dark-bg .horizontal-bar-container .title {
+  color: #999999 !important;
+}
+.dark-bg .chart-background > div p {
+  color: #565656 !important;
+}
+.dark-bg .chart-background > div::after {
+  border-color: #565656 !important;
+}
+
+.light-bg .legend span {
+  color: #565656 !important;
+}
+.light-bg .bar-chart .bar > p {
+  color: #565656 !important;
+}
+.light-bg .horizontal-bar-container .title {
+  color: #565656 !important;
+}
+
 /* ==========================================================================
    Horizontal Bars
    ========================================================================== */
@@ -5197,12 +5226,15 @@ footer .luxxi {
   font-size: 1rem;
   margin-bottom: 25px;
 }
+.horizontal-bar-container:last-child {
+  margin-bottom: 0px;
+}
 .horizontal-bar-container span {
   font-size: 1rem;
   letter-spacing: 1px;
 }
 .horizontal-bar-container .title {
-  color: #898989;
+  color: #999999;
   margin-bottom: 5px;
 }
 .horizontal-bar-container .horizontal-bar {
