@@ -239,67 +239,21 @@
 						</div>
 
 						<div class="bar-chart">
-							<div class="bar">
-								<p>Top Management</p>
+							<?php setupHorizontalBar('Top Management', 15); ?>
 
-								<div class="row">
-									<div class="left" data-value="15"><p></p></div>
+							<?php setupHorizontalBar('Middle management', 22); ?>
 
-									<div class="right" data-value="85"><p></p></div>
-								</div>
-							</div>
+							<?php setupHorizontalBar('Lower Management', 30); ?>
 
-							<div class="bar">
-								<p>Middle Management</p>
+							<?php setupHorizontalBar('Lowest Management', 42); ?>
 
-								<div class="row">
-									<div class="left" data-value="22"><p></p></div>
-
-									<div class="right" data-value="78"><p></p></div>
-								</div>
-							</div>
-
-							<div class="bar">
-								<p>Lower Management</p>
-
-								<div class="row">
-									<div class="left" data-value="30"><p></p></div>
-
-									<div class="right" data-value="70"><p></p></div>
-								</div>
-							</div>
-
-							<div class="bar">
-								<p>Lowest Management</p>
-
-								<div class="row">
-									<div class="left" data-value="42"><p></p></div>
-
-									<div class="right" data-value="58"><p></p></div>
-								</div>
-							</div>
 
 							<div class="divider-75"></div>
 
-							<div class="bar">
-								<p>All Management Levels</p>
+							<?php setupHorizontalBar('All Management Levels', 30); ?>
 
-								<div class="row">
-									<div class="left" data-value="30"><p></p></div>
+							<?php setupHorizontalBar('Non Management', 51); ?>
 
-									<div class="right" data-value="70"><p></p></div>
-								</div>
-							</div>
-
-							<div class="bar">
-								<p>Non Management</p>
-
-								<div class="row">
-									<div class="left" data-value="51"><p></p></div>
-
-									<div class="right" data-value="49"><p></p></div>
-								</div>
-							</div>
 						</div> <!-- /Bar-Chart -->
 					</div> <!-- /Chart -->
 				</section> <!-- /Topic 1.1 -->
@@ -775,9 +729,9 @@
 						</div>
 
 						<div class="col size-8 row wrap">
-							<?php setupRing(99, 93, null, 'Middle & Top Management'); ?>
-							<?php setupRing(98, 91, null, 'All Management Levels'); ?>
-							<?php setupRing(96, 87, null, 'All Employees'); ?>
+							<?php setupRing(99, 93, 'Middle & Top Management'); ?>
+							<?php setupRing(98, 91, 'All Management Levels'); ?>
+							<?php setupRing(96, 87, 'All Employees'); ?>
 						</div> <!-- /Bar-Chart -->
 					</div> <!-- /Chart -->
 				</section> <!-- /Topic 4.3 -->
@@ -819,10 +773,10 @@
 						</div>
 
 						<div class="col size-8 row wrap">
-							<?php setupRing(94, 93, null, '21-30 years'); ?>
-							<?php setupRing(97, 85, null, '31-40 years'); ?>
-							<?php setupRing(97, 83, null, '41-50 years'); ?>
-							<?php setupRing(97, 86, null, '51-60 years'); ?>
+							<?php setupRing(94, 93, '21-30 years'); ?>
+							<?php setupRing(97, 85, '31-40 years'); ?>
+							<?php setupRing(97, 83, '41-50 years'); ?>
+							<?php setupRing(97, 86, '51-60 years'); ?>
 						</div> <!-- /Bar-Chart -->
 					</div> <!-- /Chart -->
 				</section> <!-- /Topic 4.4 -->
@@ -844,8 +798,8 @@
 						</div>
 
 						<div class="col size-8 row wrap">
-							<?php setupRing(97, 89, null, 'Advance Members'); ?>
-							<?php setupRing(94, 81, null, 'Benchmarking Companies'); ?>
+							<?php setupRing(97, 89, 'Advance Members'); ?>
+							<?php setupRing(94, 81, 'Benchmarking Companies'); ?>
 						</div> <!-- /Bar-Chart -->
 					</div> <!-- /Chart -->
 				</section> <!-- /Topic 4.4 -->

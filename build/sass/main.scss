@@ -344,7 +344,7 @@ p {
     border-radius: $el-radius;
     margin: 0 auto 25px;
     -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px); 
+    backdrop-filter: blur(20px);
 
     transition: background-color .2s ease-in-out;
 
@@ -567,7 +567,7 @@ p {
 			z-index: 700;
 			top: -100px;
 			background: rgba(255,255,255,0);
-			backdrop-filter: blur(20px);  
+			backdrop-filter: blur(20px);
 			-webkit-backdrop-filter: blur(20px);
 
 			transition: top .2s ease-in-out, background .2s ease-in-out;
@@ -1289,7 +1289,7 @@ p {
 
 		.recommendation {
 			padding-top: 0;
-			
+
 			article {
 				padding-bottom: 200px;
 
@@ -1389,7 +1389,7 @@ p {
 
 footer {
 	background-color: $dark;
-	
+
 	> section {
 		> header {
 			height: auto;
@@ -1472,7 +1472,7 @@ footer {
 	display: none;
 	z-index: 1;
 	background: rgba(0,0,0,.75);
-	backdrop-filter: blur(20px);  
+	backdrop-filter: blur(20px);
 	-webkit-backdrop-filter: blur(20px);
 	overflow: hidden;
 }
@@ -1540,327 +1540,271 @@ footer {
 /* ==========================================================================
   Percentage Rings
   ========================================================================== */
-.radial-progress {
-    $circle-size: 300px;
-    $inset-size: 170px;
-    $inset-color: white;
-    $transition-length: 2s;
-    $percentage-font-size: $f-size-xl;
-    $percentage-text-width: 170px;
+  @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+  $dark: #0D1212;
+  $inset-color: #ffffff;
+  $percentage-text-width: 57px;
 
-    width: $circle-size;
-    height: $circle-size;
-    position: relative;
-    border-radius: 50%;
-    background-color: lighten(black, 90%);
-    margin-right: 40px;
-
-    &:last-child {
-    	margin-right: 0;
+  .dark-bg {
+    background-color: black;
+    .radial-progress {
+      span {
+        color: white !important;
+      }
     }
-
-    &.nested {
-        /* nested*/
-        $nested-inset-size: 240px;
-
-        /* inside element*/
-        $inside-circle-size: 240px;
-        $inside-inset-size: 180px;
-
-        margin: 20px 40px 20px 0;
-
-        &:nth-child(2n) {
-        	margin-right: 0;
-        }
-
-        > .inset {
-            width: $nested-inset-size;
-            height: $nested-inset-size;
-            margin-left: ($circle-size - $nested-inset-size) / 2;
-            margin-top: ($circle-size - $nested-inset-size) / 2;
-
-            .term {
-            	display: table-cell;
-            	vertical-align: middle;
-            	padding: 0 10px;
-            	width: 180px;
-            	height: 180px;
-            	position: relative;
-
-            	p {
-            		font-size: $f-size-m + rem;
-            		font-weight: 500;
-            		text-align: center;
-            		width: 100%;
-            		margin: 0;
-            		padding: 0;
-            	}
-            }
-
-            .radial-progress {
-                width: $inside-circle-size;
-                height: $inside-circle-size;
-
-                > .circle {
-                    .mask, .fill {
-                        width: $inside-circle-size;
-                        height: $inside-circle-size;
-                    }
-
-                    .mask {
-                        clip: rect(0px, $inside-circle-size, $inside-circle-size, $inside-circle-size / 2);
-
-                        .fill {
-                            clip: rect(0px, $inside-circle-size / 2, $inside-circle-size, 0px);
-                        }
-                    }
-                }
-
-                > .inset {
-                    width: $inside-inset-size;
-                    height: $inside-inset-size;
-                    margin-left: ($inside-circle-size - $inside-inset-size) / 2;
-                    margin-top: ($inside-circle-size - $inside-inset-size) / 2;
-                }
-            }
-
-            > .percentage {
-                left: (($circle-size - $nested-inset-size) / 2) !important;
-            }
-
-            .percentage {
-                height: $f-size-m * $default-font-size;
-                width: $inside-inset-size / 2;
-                overflow: hidden;
-                position: absolute;
-                top: -(($circle-size - $nested-inset-size - 10px) / 2);
-                left: 0;
-                line-height: 1;
-
-                .numbers {
-                    margin-top: -($f-size-m * $default-font-size);
-                    transition: width $transition-length;
-                    width: 0;
-
-                    span {
-                        width: $percentage-text-width;
-                        display: inline-block;
-                        vertical-align: top;
-                        text-align: right;
-                        font-weight: 800;
-                        font-size: $f-size-m + rem;
-                        color: $dark;
-                        box-sizing: border-box;
-                        padding-right: $percentage-text-width / 2 + 10px;
-
-                        /*font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-                    }
-                }
-            }
-        }
-    }
-
-    .circle {
-        .mask, .fill {
-            width: $circle-size;
-            height: $circle-size;
-            position: absolute;
-            border-radius: 50%;
-        }
-
-        .mask, .fill {
-            -webkit-backface-visibility: hidden;
-            transition: -webkit-transform $transition-length;
-            transition: transform $transition-length;
-            transition: transform $transition-length, -webkit-transform $transition-length;
-            border-radius: 50%;
-        }
-
-        .mask {
-            clip: rect(0px, $circle-size, $circle-size, $circle-size / 2);
-
-            .fill {
-                clip: rect(0px, $circle-size / 2, $circle-size, 0px);
-                background-color: black;
-            }
-        }
-    }
-
     .inset {
-        width: $inset-size;
-        height: $inset-size;
-        position: absolute;
-        margin-left: ($circle-size - $inset-size) / 2;
-        margin-top: ($circle-size - $inset-size) / 2;
-        background-color: $inset-color;
+      background-color: #0D1212 !important;
+    }
+  }
+
+  .clocks-wrapper {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 40px 20px 0;
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  //The initital .radial-progress is the smaller one inside
+  .radial-progress {
+  	$transition-length: 1s;
+  	$shadow: 6px 6px 10px rgba(0,0,0,0);
+  	$percentage-font-size: 22px;
+  	$percentage-text-width: 57px;
+
+  	border-radius: 50%;
+
+    span {
+      font-weight:    800;
+      font-size:      $percentage-font-size;
+      font-family:    "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      display:        inline-block;
+      vertical-align: top;
+      text-align:     center;
+    }
+    .percentage {
+      height:   $percentage-font-size;
+      width:    $percentage-text-width;
+      overflow: hidden;
+      position: absolute;
+
+      left: 50%;
+      z-index: 5;
+      transform: translateX(-100%);
+      top: 8px;
+
+      line-height: 1;
+      .numbers {
+        margin-top: -$percentage-font-size;
+        transition: width $transition-length;
+        width: 0;
+        span {
+          width: $percentage-text-width;
+        }
+      }
+    }
+  	.circle {
+  		.mask, .fill, .shadow {
+  			position: absolute;
+  		}
+      .fill {
         border-radius: 50%;
+      }
+  		.shadow {
+  			box-shadow: $shadow inset;
+  		}
+  		.mask, .fill {
+  			-webkit-backface-visibility: hidden;
+  			transition: -webkit-transform $transition-length;
+  			transition: -ms-transform $transition-length;
+  			transition: transform $transition-length;
+  		}
+  	}
+  	.inset {
+  		position:    absolute;
+      z-index: 5;
 
-        .percentage {
-            height: $percentage-font-size * $default-font-size;
-            width: $percentage-text-width;
-            overflow: hidden;
-            position: absolute;
-            top: ($inset-size - $percentage-font-size * $default-font-size) / 2;
-            left: ($inset-size - $percentage-text-width) / 2;
-            line-height: 1;
+  		border-radius: 50%;
+  		box-shadow: $shadow;
 
-            .numbers {
-                margin-top: -($percentage-font-size * $default-font-size);
-                transition: width $transition-length;
-                width: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $inset-color;
+  	}
+  }
 
-                span {
-                    width: $percentage-text-width;
-                    display: inline-block;
-                    vertical-align: top;
-                    text-align: center;
-                    font-weight: 800;
-                    font-size: $f-size-xl + rem;
+  .radial-progress.outer {
+  	$circle-size: 300px;
+  	$inset-size: 240px;
+    $circle-background: rgba(170, 217, 216, 0.25);
+    $circle-color: #AAD9D8;
+    $percentage-text-width: 57px;
+    background-color: $circle-background;
+    position: relative;
+  	width:  $circle-size;
+  	height: $circle-size;
+  	.circle {
+  		.mask, .fill, .shadow {
+  			width:    $circle-size;
+  			height:   $circle-size;
+  		}
+  		.mask {
+  			clip: rect(0px, $circle-size, $circle-size, $circle-size/2);
+  			.fill {
+          background-color: $circle-color;
+  				clip: rect(0px, $circle-size/2, $circle-size, 0px);
+  			}
+  		}
+  	}
+  	.inset {
+  		width:       $inset-size;
+  		height:      $inset-size;
+  		margin-left: ($circle-size - $inset-size)/2;
+  		margin-top:  ($circle-size - $inset-size)/2;
+  	}
+  }
 
-                    /*font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-                }
+  .clocks-wrapper.visible {
+    .radial-progress.outer {
+      $i: 0;
+      $increment: 180deg / 100;
+      @for $i from 0 through 100 {
+          &[data-progress="#{$i}"] {
+          .circle {
+            .mask.full, .fill {
+              -webkit-transform: rotate($increment * $i);
+              -ms-transform: rotate($increment * $i);
+              transform: rotate($increment * $i);
             }
+            .fill.fix {
+              -webkit-transform: rotate($increment * $i * 2);
+              -ms-transform: rotate($increment * $i * 2);
+              transform: rotate($increment * $i * 2);
+            }
+          }
+          .percentage .numbers {
+            width: $i * $percentage-text-width + $percentage-text-width;
+          }
         }
+      }
     }
-
-    &.carmine-pink {
-        background-color: rgba(230, 70, 64, .25);
-
-        > .circle {
-            .mask {
-                .fill {
-                    background-color: $carmine-pink !important;
-                }
+    .radial-progress.inner {
+      $i: 0;
+      $increment: 180deg / 100;
+      @for $i from 0 through 100 {
+          &[data-progress="#{$i}"] {
+          .circle {
+            .mask.full, .fill {
+              -webkit-transform: rotate($increment * $i);
+              -ms-transform: rotate($increment * $i);
+              transform: rotate($increment * $i);
             }
-        }
-
-        .inset {
-            .numbers {
-                span {
-                    color: $carmine-pink;
-                }
+            .fill.fix {
+              -webkit-transform: rotate($increment * $i * 2);
+              -ms-transform: rotate($increment * $i * 2);
+              transform: rotate($increment * $i * 2);
             }
+          }
+          .percentage .numbers {
+            width: $i * $percentage-text-width + $percentage-text-width;
+          }
         }
+      }
     }
+  }
 
-    &.scandal-mint {
-        background-color: rgba(170, 217, 216, .25);
+  .radial-progress.inner {
+  	$circle-size: 240px;
+  	$inset-size: 180px;
+    $circle-background: rgba(230, 70, 64, 0.25);
+    $circle-color: #E64640;
 
-        > .circle {
-            .mask {
-                .fill {
-                    background-color: $scandal-mint !important;
-                }
-            }
-        }
+  	width:  $circle-size;
+  	height: $circle-size;
+    background-color: $circle-background;
 
-        .inset {
-            .numbers {
-                span {
-                    color: $scandal-mint;
-                }
-            }
-        }
-    }
+  	.circle {
+  		.mask, .fill, .shadow {
+  			width:    $circle-size;
+  			height:   $circle-size;
+  		}
+  		.shadow {
+  		}
+  		.mask {
+  			clip: rect(0px, $circle-size, $circle-size, $circle-size/2);
+  			.fill {
+  				clip: rect(0px, $circle-size/2, $circle-size, 0px);
+          background-color: $circle-color;
+  			}
+  		}
+  	}
+  	.inset {
+  		width:       $inset-size;
+  		height:      $inset-size;
+  		margin-left: ($circle-size - $inset-size)/2;
+  		margin-top:  ($circle-size - $inset-size)/2;
+  	}
+  }
 
-    $increment: 180deg / 100;
 
-    @for $i from 0 through 100 {
-        &[data-progress="#{$i}"], &[data-progress-1="#{$i}"], &[data-progress-2="#{$i}"] {
-            > .circle.visible {
-                > .mask.full, .fill {
-                    -webkit-transform: rotate($increment * $i);
-                    transform: rotate($increment * $i);
-                }
+/* ==========================================================================
+   Horizontal Bars
+   ========================================================================== */
 
-                > .fill.fix {
-                    -webkit-transform: rotate($increment * $i * 2);
-                    transform: rotate($increment * $i * 2);
-                }
-            }
-
-            > .inset > .percentage.visible > .numbers {
-                width: $i * $percentage-text-width + $percentage-text-width;
-            }
-        }
-    }
-}
-
-.dark-bg {
-	.radial-progress {
-		.inset {
-			background: $dark;
-
-			.term {
-				color: white;
-			}
-		}
-
-		&.nested {
-			.numbers span {
-				color: white !important;
-			}
-		}
-	}
-
-	a {
-		color: white;
-	}
-
-	.legend {
-		span {
-			color: darken(white, 40%) !important;
-		}
-	}
-
-	.bar-chart {
-		.bar > p {
-			color: darken(white, 40%) !important;
-		}
-	}
-
-	.chart-background {
-		> div {
-			p {
-				color: darken($grey, 20%) !important; 
-			}
-
-			&::after {
-				border-color: darken($grey, 20%) !important;
-			}
-		}
-	}
-}
-
-.light-bg {
-	.radial-progress {
-		.inset {
-			background: white;
-
-			.term {
-				color: $dark;
-			}
-		}
-
-		&.nested {
-			.numbers span {
-				color: $dark !important;
-			}
-		}
-	}
-
-	.legend {
-		span {
-			color: darken($grey, 20%) !important;
-		}
-	}
-
-	.bar-chart {
-		.bar > p {
-			color: darken($grey, 20%) !important;
-		}
-	}
-}
+   .horizontal-bar-container {
+     width: 640px;
+     max-width: 100%;
+     font-weight: 500;
+     font-size: 1rem;
+     margin-bottom: 25px;
+     span {
+       font-size: 1rem;
+       letter-spacing: 1px;
+     }
+     .title {
+       color: #898989;
+       margin-bottom: 5px;
+     }
+     .horizontal-bar {
+       height: 50px;
+       position: relative;
+     }
+     .bar-text {
+       display: flex;
+       position: absolute;
+       width: 100%;
+       height: 100%;
+       justify-content: space-between;
+       align-items: center;
+       padding: 0 25px;
+       box-sizing: border-box;
+       .text-left {
+         color: white;
+       }
+       .text-right {
+         color: black;
+       }
+     }
+     .bar-background {
+       width: 100%;
+       height: 100%;
+       background-color: #AAD9D8;
+       border-radius: 9px;
+       position: absolute;
+       overflow: hidden;
+     }
+     .bar-foreground {
+       display: inline-block;
+       width: 50%;
+       height: 100%;
+       background-color: #E64640;
+       border-radius: 9px 0 0 9px;
+       transition: width 1s ease-in-out;
+     }
+   }
 
 /* ==========================================================================
    Helper classes
@@ -1962,7 +1906,7 @@ footer {
 			}
 		}
 	}
-}	
+}
 
 @media only screen and (max-width: 1024px) {
 	.main-header {
@@ -2154,7 +2098,7 @@ footer {
 }
 
 @media only screen and (min-width: 900px) {
-	
+
 }
 
 @media only screen and (max-width: 900px) {
@@ -2422,6 +2366,12 @@ footer {
 				}
 			}
 		}
+    .horizontal-bar {
+      height: 35px;
+      span {
+        font-size: 0.777rem;
+      }
+    }
 	}
 
 	.main-header {
