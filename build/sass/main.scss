@@ -1563,18 +1563,19 @@ footer {
   .radial-progress {
   	$transition-length: 1s;
   	$shadow: 6px 6px 10px rgba(0,0,0,0);
-  	$percentage-font-size: 22px;
+  	$percentage-font-size: 1.166rem;
   	$percentage-text-width: 57px;
 
   	border-radius: 50%;
 
     span {
-      font-weight:    800;
+      font-weight:    500;
       font-size:      $percentage-font-size;
-      font-family:    "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      letter-spacing: 1px;
       display:        inline-block;
       vertical-align: top;
       text-align:     center;
+      max-width: 160px;
     }
     .percentage {
       height:   $percentage-font-size;

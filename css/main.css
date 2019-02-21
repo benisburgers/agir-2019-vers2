@@ -1560,15 +1560,16 @@ footer .luxxi {
   border-radius: 50%;
 }
 .radial-progress span {
-  font-weight: 800;
-  font-size: 22px;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.166rem;
+  letter-spacing: 1px;
   display: inline-block;
   vertical-align: top;
   text-align: center;
+  max-width: 160px;
 }
 .radial-progress .percentage {
-  height: 22px;
+  height: 1.166rem;
   width: 57px;
   overflow: hidden;
   position: absolute;
@@ -1579,7 +1580,7 @@ footer .luxxi {
   line-height: 1;
 }
 .radial-progress .percentage .numbers {
-  margin-top: -22px;
+  margin-top: -1.166rem;
   transition: width 1s;
   width: 0;
 }
