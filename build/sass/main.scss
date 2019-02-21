@@ -1277,15 +1277,14 @@ p {
 							color: $dark;
 						}
 					}
-
-					@for $i from 0 through 100 {
-					    > div[data-value="#{$i}"] {
-					        width: calc((100% / 50) * #{$i});
-					    }
-					}
 				}
 			}
 		}
+
+    .expand-bar {
+      width: 0;
+      transition: width 1s ease-in-out;
+    }
 
 		.recommendation {
 			padding-top: 0;

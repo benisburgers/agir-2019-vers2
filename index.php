@@ -453,9 +453,9 @@
 
 							<div class="bar-group row">
 								<div class="bars">
-									<div class="carmine-pink" data-value="32"><p></p></div>
+									<div class="carmine-pink expand-bar" data-value="32"><p></p></div>
 
-									<div class="scandal-mint" data-value="30"><p></p></div>
+									<div class="scandal-mint expand-bar" data-value="30"><p></p></div>
 								</div>
 							</div>
 						</div> <!-- /Bar-Chart -->
@@ -491,9 +491,9 @@
 
 							<div class="bar-group row">
 								<div class="bars">
-									<div class="carmine-pink" data-value="42"><p></p></div>
+									<div class="carmine-pink expand-bar" data-value="42"><p></p></div>
 
-									<div class="scandal-mint" data-value="37"><p></p></div>
+									<div class="scandal-mint expand-bar" data-value="37"><p></p></div>
 								</div>
 							</div>
 						</div> <!-- /Bar-Chart -->

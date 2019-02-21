@@ -2,6 +2,7 @@ $(document).ready(function() {
     var $window = $(window),
         $body = $('body'),
         minifyClass = 'minify',
+        $expandBar = $('.expand-bar')
         $circleEl = $('.clocks-wrapper');
 
     feather.replace();
@@ -107,6 +108,19 @@ $(document).ready(function() {
         repeat: false,
         offset: '10%',
         invertBottomOffset: true
+    });
+
+
+    $expandBar.viewportChecker({
+        classToAdd: 'visible',
+        repeat: false,
+        offset: '10%',
+        invertBottomOffset: true,
+        callbackFunction: function(elem, action){
+          var dataValue = elem.attr('data-value')
+          console.log(elem);
+          elem.css('width', ((100 / 50) * dataValue) + '%')
+        },
     });
 
     $('.bar > div p, .bars > div p').text(function() {
