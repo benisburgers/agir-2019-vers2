@@ -197,7 +197,7 @@ $(document).ready(function() {
        }, transitionDelay)
     }
 
-    //Use to expand width of expandable horizontal Bars
+    //Use to expand width of expandable horizontal and vertical bars
     $expandBar.viewportChecker({
         classToAdd: 'visible',
         repeat: false,
@@ -219,6 +219,7 @@ $(document).ready(function() {
     });
     //Use for expanding bars
     function increaseNumber(elem, dataValue, current, transitionDelay) {
+      //This a recursive loop with a transitional Delay. 
       setTimeout(function () {
         elem.find('p').html(current + '%')
         current++;
