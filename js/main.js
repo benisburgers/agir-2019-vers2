@@ -3,7 +3,6 @@ $(document).ready(function() {
         $body = $('body'),
         minifyClass = 'minify',
         $expandBar = $('.expand-bar'),
-        $verticalBar = $('.vertical-bar')
         $circleEl = $('.clocks-wrapper');
 
     feather.replace();
@@ -209,25 +208,12 @@ $(document).ready(function() {
         invertBottomOffset: true,
         callbackFunction: function(elem, action){
           var dataValue = elem.attr('data-value')
-          elem.css('width', ((100 / 50) * dataValue) + '%')
-          increaseNumber(elem, dataValue, 0)
-        },
-    });
-
-    //Use for vertically expandable bars
-    $verticalBar.viewportChecker({
-        classToAdd: 'visible',
-        repeat: false,
-        offset: '10%',
-        invertBottomOffset: true,
-        callbackFunction: function(elem, action){
-          var dataValue = elem.attr('data-value')
           var totalValue = elem.attr('data-total-value')
-          elem.css('height', ((100 / totalValue) * dataValue) + '%')
+          var expandDirection = elem.attr('data-expand-direction')
+          elem.css(expandDirection, ((100 / totalValue) * dataValue) + '%')
           increaseNumber(elem, dataValue, 0)
         },
     });
-
 
     //Use for expanding bars
     function increaseNumber(elem, dataValue, current) {

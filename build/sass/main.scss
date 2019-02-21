@@ -1100,11 +1100,6 @@ p {
 				right: 0;
 				bottom: 0;
 
-        .vertical-bar {
-          height: 0%;
-          transition: height 1s ease-in-out;
-        }
-
 				.bars {
 					position: relative;
 					width: calc(100% / 5);
@@ -1275,8 +1270,9 @@ p {
 		}
 
     .expand-bar {
-      width: 0;
-      transition: width 1s ease-in-out;
+      width: 0%;
+      height: 0%;
+      transition: width 1s, height 1s;
     }
 
 		.recommendation {

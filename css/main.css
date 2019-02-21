@@ -1208,10 +1208,6 @@ p {
   right: 0;
   bottom: 0;
 }
-.main-content > section .bar-chart-vertical .bar-group .vertical-bar, footer > section .bar-chart-vertical .bar-group .vertical-bar {
-  height: 0%;
-  transition: height 1s ease-in-out;
-}
 .main-content > section .bar-chart-vertical .bar-group .bars, footer > section .bar-chart-vertical .bar-group .bars {
   position: relative;
   width: calc(100% / 5);
@@ -1354,8 +1350,9 @@ p {
   color: #0D1212;
 }
 .main-content > section .expand-bar, footer > section .expand-bar {
-  width: 0;
-  transition: width 1s ease-in-out;
+  width: 0%;
+  height: 0%;
+  transition: width 1s, height 1s;
 }
 .main-content > section .recommendation, footer > section .recommendation {
   padding-top: 0;

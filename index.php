@@ -307,41 +307,41 @@
 
 							<div class="bar-group row">
 								<div class="bars">
-									<div class="left  vertical-bar" data-value="17"  data-total-value="60"><p></p></div>
+									<div class="left  expand-bar" data-expand-direction="height" data-value="17"  data-total-value="60"><p></p></div>
 
-									<div class="right vertical-bar" data-value="9"  data-total-value="60"><p></p></div>
+									<div class="right expand-bar" data-expand-direction="height" data-value="9"  data-total-value="60"><p></p></div>
 
 									<p>Top Management</p>
 								</div>
 
 								<div class="bars">
-									<div class="left vertical-bar" data-value="24"  data-total-value="60"><p></p></div>
+									<div class="left expand-bar" data-expand-direction="height" data-value="24"  data-total-value="60"><p></p></div>
 
-									<div class="right vertical-bar" data-value="17"  data-total-value="60"><p></p></div>
+									<div class="right expand-bar" data-expand-direction="height" data-value="17"  data-total-value="60"><p></p></div>
 
 									<p>Middle Management</p>
 								</div>
 
 								<div class="bars">
-									<div class="left vertical-bar" data-value="32"  data-total-value="60"><p></p></div>
+									<div class="left expand-bar" data-expand-direction="height" data-value="32"  data-total-value="60"><p></p></div>
 
-									<div class="right vertical-bar" data-value="24"  data-total-value="60"><p></p></div>
+									<div class="right expand-bar" data-expand-direction="height" data-value="24"  data-total-value="60"><p></p></div>
 
 									<p>Lower Management</p>
 								</div>
 
 								<div class="bars">
-									<div class="left vertical-bar" data-value="43"  data-total-value="60"><p></p></div>
+									<div class="left expand-bar" data-expand-direction="height" data-value="43"  data-total-value="60"><p></p></div>
 
-									<div class="right vertical-bar" data-value="41"  data-total-value="60"><p></p></div>
+									<div class="right expand-bar" data-expand-direction="height" data-value="41"  data-total-value="60"><p></p></div>
 
 									<p>Lowest Management</p>
 								</div>
 
 								<div class="bars">
-									<div class="left vertical-bar" data-value="49"  data-total-value="60"><p></p></div>
+									<div class="left expand-bar" data-expand-direction="height" data-value="49"  data-total-value="60"><p></p></div>
 
-									<div class="right vertical-bar" data-value="57"  data-total-value="60"><p></p></div>
+									<div class="right expand-bar" data-expand-direction="height" data-value="57"  data-total-value="60"><p></p></div>
 
 									<p>Non Management</p>
 								</div>
@@ -453,9 +453,9 @@
 
 							<div class="bar-group row">
 								<div class="bars">
-									<div class="carmine-pink expand-bar" data-value="32"><p></p></div>
+									<div class="carmine-pink expand-bar" data-value="32" data-total-value="50" data-expand-direction="width"><p></p></div>
 
-									<div class="scandal-mint expand-bar" data-value="30"><p></p></div>
+									<div class="scandal-mint expand-bar" data-value="30" data-total-value="50" data-expand-direction="width"><p></p></div>
 								</div>
 							</div>
 						</div> <!-- /Bar-Chart -->
@@ -491,9 +491,9 @@
 
 							<div class="bar-group row">
 								<div class="bars">
-									<div class="carmine-pink expand-bar" data-value="42"><p></p></div>
+									<div class="carmine-pink expand-bar" data-value="42" data-total-value="50" data-expand-direction="width"><p></p></div>
 
-									<div class="scandal-mint expand-bar" data-value="37"><p></p></div>
+									<div class="scandal-mint expand-bar" data-value="37" data-total-value="50" data-expand-direction="width"><p></p></div>
 								</div>
 							</div>
 						</div> <!-- /Bar-Chart -->
@@ -538,17 +538,17 @@
 
 							<div class="bar-group row">
 								<div class="bars">
-									<div class="left vertical-bar" data-value="12" data-total-value="20"><p></p></div>
+									<div class="left expand-bar" data-expand-direction="height" data-value="12" data-total-value="20"><p></p></div>
 
-									<div class="right vertical-bar" data-value="11" data-total-value="20"><p></p></div>
+									<div class="right expand-bar" data-expand-direction="height" data-value="11" data-total-value="20"><p></p></div>
 
 									<p>Total</p>
 								</div>
 
 								<div class="bars">
-									<div class="left vertical-bar" data-value="10" data-total-value="20"><p></p></div>
+									<div class="left expand-bar" data-expand-direction="height" data-value="10" data-total-value="20"><p></p></div>
 
-									<div class="right vertical-bar" data-value="10"  data-total-value="20"><p></p></div>
+									<div class="right expand-bar" data-expand-direction="height" data-value="10"  data-total-value="20"><p></p></div>
 
 									<p>Management</p>
 								</div>
