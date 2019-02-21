@@ -1012,12 +1012,6 @@ p {
 					.bars {
 						width: calc(100% / 2);
 
-						@for $i from 0 through 100 {
-						    > div[data-value="#{$i}"] {
-						        height: calc((100% / 20) * #{$i});
-						    }
-						}
-
 						> div {
 							> p {
 								padding: 0 0 25px 0;
@@ -1106,6 +1100,11 @@ p {
 				right: 0;
 				bottom: 0;
 
+        .vertical-bar {
+          height: 0%;
+          transition: height 1s ease-in-out;
+        }
+
 				.bars {
 					position: relative;
 					width: calc(100% / 5);
@@ -1156,12 +1155,6 @@ p {
 						p {
 							color: $dark;
 						}
-					}
-
-					@for $i from 0 through 100 {
-					    > div[data-value="#{$i}"] {
-					        height: calc((100% / 60) * #{$i});
-					    }
 					}
 				}
 			}

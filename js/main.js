@@ -2,7 +2,8 @@ $(document).ready(function() {
     var $window = $(window),
         $body = $('body'),
         minifyClass = 'minify',
-        $expandBar = $('.expand-bar')
+        $expandBar = $('.expand-bar'),
+        $verticalBar = $('.vertical-bar')
         $circleEl = $('.clocks-wrapper');
 
     feather.replace();
@@ -103,29 +104,9 @@ $(document).ready(function() {
         }
     });
 
-    $circleEl.viewportChecker({
-        classToAdd: 'visible',
-        repeat: false,
-        offset: '10%',
-        invertBottomOffset: true
-    });
-
-
-    $expandBar.viewportChecker({
-        classToAdd: 'visible',
-        repeat: false,
-        offset: '10%',
-        invertBottomOffset: true,
-        callbackFunction: function(elem, action){
-          var dataValue = elem.attr('data-value')
-          console.log(elem);
-          elem.css('width', ((100 / 50) * dataValue) + '%')
-        },
-    });
-
-    $('.bar > div p, .bars > div p').text(function() {
-        return $(this).parent().data('value');
-    }).append('%');
+    // $('.bar > div p, .bars > div p').text(function() {
+    //     return $(this).parent().data('value');
+    // }).append('%');
 
     // Scroll smooth to anchor Function
     // var $root = $('html, body');
@@ -152,7 +133,17 @@ $(document).ready(function() {
     	}
     });
 
+    $circleEl.viewportChecker({
+        classToAdd: 'visible',
+        repeat: false,
+        offset: '10%',
+        invertBottomOffset: true
+    });
+
+
     //All kinds of functions to move the bars and their percentages
+
+    //Function to change the width of symmetrical (50/50) bars
     var $barEl = $('.horizontal-bar-container');
     $barEl.viewportChecker({
         repeat: false,
@@ -169,7 +160,7 @@ $(document).ready(function() {
           }
         }
     });
-
+    //Use for symmetrical (50/50) bars
     function changeNumberValue(element, endValue) {
       const start = 50;
       //current always starts in the middle
@@ -187,7 +178,7 @@ $(document).ready(function() {
         add(current, end, element, transitionDelay);
       }
     }
-
+    //Use when value is bellow 50%
     function subtract (current, end, element, transitionDelay) {
        setTimeout(function () {
           current--;
@@ -198,7 +189,7 @@ $(document).ready(function() {
           }
        }, transitionDelay)
     }
-
+    //Use when value is above 50%
     function add (current, end, element, transitionDelay) {
        setTimeout(function () {
           current++;
@@ -208,5 +199,45 @@ $(document).ready(function() {
              element.find('.text-right').html(100 - current + '%')
           }
        }, transitionDelay)
+    }
+
+    //Use to expand width of expandable horizontal Bars
+    $expandBar.viewportChecker({
+        classToAdd: 'visible',
+        repeat: false,
+        offset: '10%',
+        invertBottomOffset: true,
+        callbackFunction: function(elem, action){
+          var dataValue = elem.attr('data-value')
+          elem.css('width', ((100 / 50) * dataValue) + '%')
+          increaseNumber(elem, dataValue, 0)
+        },
+    });
+
+    //Use for vertically expandable bars
+    $verticalBar.viewportChecker({
+        classToAdd: 'visible',
+        repeat: false,
+        offset: '10%',
+        invertBottomOffset: true,
+        callbackFunction: function(elem, action){
+          var dataValue = elem.attr('data-value')
+          var totalValue = elem.attr('data-total-value')
+          elem.css('height', ((100 / totalValue) * dataValue) + '%')
+          increaseNumber(elem, dataValue, 0)
+        },
+    });
+
+
+    //Use for expanding bars
+    function increaseNumber(elem, dataValue, current) {
+      var transitionDelay = 1000 / dataValue;
+      setTimeout(function () {
+         current++;
+         if (current <= dataValue) {
+            elem.find('p').html(current + '%')
+            increaseNumber(elem, dataValue, current)
+         }
+      }, transitionDelay)
     }
 });

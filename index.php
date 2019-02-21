@@ -307,41 +307,41 @@
 
 							<div class="bar-group row">
 								<div class="bars">
-									<div class="left" data-value="17"><p></p></div>
+									<div class="left  vertical-bar" data-value="17"  data-total-value="60"><p></p></div>
 
-									<div class="right" data-value="9"><p></p></div>
+									<div class="right vertical-bar" data-value="9"  data-total-value="60"><p></p></div>
 
 									<p>Top Management</p>
 								</div>
 
 								<div class="bars">
-									<div class="left" data-value="24"><p></p></div>
+									<div class="left vertical-bar" data-value="24"  data-total-value="60"><p></p></div>
 
-									<div class="right" data-value="17"><p></p></div>
+									<div class="right vertical-bar" data-value="17"  data-total-value="60"><p></p></div>
 
 									<p>Middle Management</p>
 								</div>
 
 								<div class="bars">
-									<div class="left" data-value="32"><p></p></div>
+									<div class="left vertical-bar" data-value="32"  data-total-value="60"><p></p></div>
 
-									<div class="right" data-value="24"><p></p></div>
+									<div class="right vertical-bar" data-value="24"  data-total-value="60"><p></p></div>
 
 									<p>Lower Management</p>
 								</div>
 
 								<div class="bars">
-									<div class="left" data-value="43"><p></p></div>
+									<div class="left vertical-bar" data-value="43"  data-total-value="60"><p></p></div>
 
-									<div class="right" data-value="41"><p></p></div>
+									<div class="right vertical-bar" data-value="41"  data-total-value="60"><p></p></div>
 
 									<p>Lowest Management</p>
 								</div>
 
 								<div class="bars">
-									<div class="left" data-value="49"><p></p></div>
+									<div class="left vertical-bar" data-value="49"  data-total-value="60"><p></p></div>
 
-									<div class="right" data-value="57"><p></p></div>
+									<div class="right vertical-bar" data-value="57"  data-total-value="60"><p></p></div>
 
 									<p>Non Management</p>
 								</div>
@@ -538,17 +538,17 @@
 
 							<div class="bar-group row">
 								<div class="bars">
-									<div class="left" data-value="12"><p></p></div>
+									<div class="left vertical-bar" data-value="12" data-total-value="20"><p></p></div>
 
-									<div class="right" data-value="11"><p></p></div>
+									<div class="right vertical-bar" data-value="11" data-total-value="20"><p></p></div>
 
 									<p>Total</p>
 								</div>
 
 								<div class="bars">
-									<div class="left" data-value="10"><p></p></div>
+									<div class="left vertical-bar" data-value="10" data-total-value="20"><p></p></div>
 
-									<div class="right" data-value="10"><p></p></div>
+									<div class="right vertical-bar" data-value="10"  data-total-value="20"><p></p></div>
 
 									<p>Management</p>
 								</div>
