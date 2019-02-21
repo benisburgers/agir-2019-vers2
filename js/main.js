@@ -150,10 +150,7 @@ $(document).ready(function() {
         invertBottomOffset: true,
         callbackFunction: function(elem, action){
           var dataPercentage = elem.attr('data-percentage')
-
-          if(action == 'remove') {
-            elem.find('.bar-foreground').css('width', '50%');
-          } else if(action == 'add') {
+          if(action == 'add') {
             elem.find('.bar-foreground').css('width', dataPercentage + '%');
             changeNumberValue(elem, dataPercentage);
           }
@@ -208,22 +205,27 @@ $(document).ready(function() {
         invertBottomOffset: true,
         callbackFunction: function(elem, action){
           var dataValue = elem.attr('data-value')
+          //How long it takes each number to change depends on how many numbers need to change. In total, the final number must be visible after 1 second.
+          var transitionDelay = 1000 / dataValue;
+          //What is the total value of the element. In other words, how wide is the bar when it is 100% wide?
           var totalValue = elem.attr('data-total-value')
+          //In which direction must the bar expand? Upwards or sidewards? Height or width?
           var expandDirection = elem.attr('data-expand-direction')
+          //Provide the element with the correct width or height
           elem.css(expandDirection, ((100 / totalValue) * dataValue) + '%')
-          increaseNumber(elem, dataValue, 0)
+          //Run the function which increases the number on the side
+          increaseNumber(elem, dataValue, 0, transitionDelay)
         },
     });
-
     //Use for expanding bars
-    function increaseNumber(elem, dataValue, current) {
-      var transitionDelay = 1000 / dataValue;
+    function increaseNumber(elem, dataValue, current, transitionDelay) {
       setTimeout(function () {
-         current++;
-         if (current <= dataValue) {
-            elem.find('p').html(current + '%')
-            increaseNumber(elem, dataValue, current)
-         }
+        elem.find('p').html(current + '%')
+        current++;
+        if (current <= dataValue) {
+          elem.find('p').html(current + '%')
+          increaseNumber(elem, dataValue, current, transitionDelay)
+        }
       }, transitionDelay)
     }
 });
