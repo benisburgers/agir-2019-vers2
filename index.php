@@ -15,6 +15,7 @@
 		<link rel="stylesheet" href="css/hamburgers.min.css">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/beni.css">
 
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="https://advance-hsg-report.ch" />
