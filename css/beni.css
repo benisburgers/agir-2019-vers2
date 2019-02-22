@@ -41,6 +41,24 @@
   margin-bottom: 10px;
 }
 
+.main-header {
+  padding: 115px;
+  height: auto;
+}
+
+.header-inner {
+  height: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.header-inner h1 {
+  margin-top: 150px;
+}
+
+.header-footer a {
+  margin-bottom: 50px;
+}
+
 #impressum .inner {
   padding-top: 100px;
 }

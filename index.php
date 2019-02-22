@@ -40,20 +40,20 @@
 
 		<!-- Site Header -->
 		<header class="main-header hidden-magic">
-			<div class="inner row wrap">
+			<div class="header-inner">
+
+								<section class="header-footer row">
+									<!-- <p class="tag">by Advance & HSG</p> -->
+
+									<a href="http://www.advance-women.ch/display/WIR/Home" target="_blank">
+										<img class="adv-logo" src="img/content/advance-logo-color.svg" alt="Advance Logo" title="Advance Logo">
+									</a>
+
+									<a href="http://ccdi-unisg.ch" target="_blank">
+										<img src="img/content/hsg-logo-color.svg" alt="HSG Logo" title="HSG Logo">
+									</a>
+								</section>
 				<h1>Advance & HSG<br />Gender Intelligence<br />Report 2018</h1>
-
-				<section class="header-footer row">
-					<!-- <p class="tag">by Advance & HSG</p> -->
-
-					<a href="http://www.advance-women.ch/display/WIR/Home" target="_blank">
-						<img class="adv-logo" src="img/content/advance-logo-color.svg" alt="Advance Logo" title="Advance Logo">
-					</a>
-
-					<a href="http://ccdi-unisg.ch" target="_blank">
-						<img src="img/content/hsg-logo-color.svg" alt="HSG Logo" title="HSG Logo">
-					</a>
-				</section>
 			</div>
 
 			<!-- Site Navigation -->
