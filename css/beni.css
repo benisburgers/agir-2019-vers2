@@ -1,3 +1,48 @@
+.intro h1 {
+  color: #FAB95B;
+}
 
+.col.align-left {
+  margin-left: 0 !important;
+}
+.col.align-right {
+  margin-right: 0 !important;
+  margin-left: auto !important;
+}
+.col.size-3 {
+  max-width: calc((960px / 12) * 3);
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+.justify-between > div {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.intro-sidebar {
+  padding-top: 50px;
+}
+.intro-sidebar .driver-item {
+  padding: 0;
+}
+.intro-sidebar .driver-item h2, .intro-sidebar .driver-item p {
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding: 0;
+}
+.intro-sidebar .cta {
+  margin-top: 50px;
+}
+.intro-sidebar .button {
+  min-width: 0;
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+#impressum .inner {
+  padding-top: 100px;
+}
 
 /*# sourceMappingURL=beni.css.map */

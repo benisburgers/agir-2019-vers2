@@ -1,0 +1,51 @@
+$primary-color: #FAB95B;
+$secondary-color: #1A3263;
+
+.intro {
+  h1 {
+    color: $primary-color;
+  }
+}
+.col {
+  &.align-left {
+    margin-left: 0 !important;
+  }
+  &.align-right {
+    margin-right: 0 !important;
+    margin-left: auto !important;
+  }
+	&.size-3 {
+		max-width: calc((960px / 12) * 3);
+	}
+}
+.justify-between {
+  & > div {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  justify-content: space-between;
+}
+.intro-sidebar {
+  padding-top: 50px;
+  .driver-item {
+    padding: 0;
+    h2, p {
+      margin-top: 20px;
+      margin-bottom: 0;
+      padding: 0;
+    }
+  }
+  .cta {
+    margin-top: 50px;
+  }
+  .button {
+    min-width: 0;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+}
+#impressum {
+  .inner {
+    padding-top: 100px;
+  }
+}
