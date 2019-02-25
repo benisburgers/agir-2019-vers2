@@ -1,11 +1,6 @@
 $primary-color: #FAB95B;
 $secondary-color: #1A3263;
 
-.intro {
-  h1 {
-    color: $primary-color;
-  }
-}
 .col {
   &.align-left {
     margin-left: 0 !important;
@@ -42,6 +37,10 @@ $secondary-color: #1A3263;
     min-width: 0;
     max-width: 100%;
     margin-bottom: 10px;
+    background-color: $primary-color;
+    a {
+      color: black;
+    }
   }
 }
 .main-header {
@@ -54,6 +53,7 @@ $secondary-color: #1A3263;
   margin: 0 auto;
   h1 {
     margin-top: 150px;
+    color: $primary-color;
   }
 }
 .header-footer {
@@ -65,4 +65,82 @@ $secondary-color: #1A3263;
   .inner {
     padding-top: 100px;
   }
+}
+
+.main-content > section > header > .inner::before, footer > section > header > .inner::before {
+  background-color: $primary-color
+}
+#main-nav .hamburger-box .hamburger-inner, #main-nav .hamburger-box .hamburger-inner::after, #main-nav .hamburger-box .hamburger-inner::before {
+  background-color: $primary-color;
+}
+.main-content .driver-item::before, footer .driver-item::before {
+  background-color: $primary-color;
+}
+.primary {
+  &:before {
+    background: $primary-color;
+  }
+}
+.secondary {
+  &:before {
+    background: $secondary-color;
+  }
+}
+
+.primary-background {
+  background-color: $primary-color !important;
+}
+.secondary-background {
+  background-color: $secondary-color !important;
+}
+.primary-text {
+  color: $primary-color !important;
+}
+.secondary-text {
+  color: $secondary-color !important;
+}
+
+.horizontal-bar-container .bar-text .text-right {
+  color: white;
+}
+.main-content > section .catcher .topic p, footer > section .catcher .topic p {
+  color: $secondary-color;
+}
+.main-content > section .catcher, footer > section .catcher {
+  background-color: $secondary-color;
+  color: $primary-color;
+  article {
+    .text {
+      p {
+        span {
+          color: $primary-color;
+          &:before {
+            background-color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}
+.radial-progress.inner {
+  background-color: rgba($primary-color, .25);
+  span {
+    color: $secondary-color !important;
+  }
+}
+.radial-progress.inner .circle .mask .fill {
+  background-color: $primary-color !important;
+}
+.radial-progress.outer {
+  background-color: rbga($secondary-color, .25);
+  span {
+    color: $primary-color;
+  }
+}
+.radial-progress.outer .circle .mask .fill {
+  background-color: $secondary-color;
+}
+
+.main-content > section .recommendation .left::before, footer > section .recommendation .left::before {
+  background-color: $primary-color; 
 }

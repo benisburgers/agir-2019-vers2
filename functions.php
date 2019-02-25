@@ -51,15 +51,15 @@ function setupHorizontalBar($barTitle, $barPercentage) {
 			<span>' . $barTitle . '</span>
 		</div>
 		<div class="horizontal-bar">
-			<div class="bar-background">
-				<div class="bar-foreground bar-transition">
+			<div class="bar-background secondary-background">
+				<div class="bar-foreground bar-transition primary-background">
 					<span class="percentage-left"></span>
 				</div>
 				<span class="percentage-right"></span>
 			</div>
 			<div class="bar-text">
-				<span class="text-left">50%</span>
-				<span class="text-right">50%</span>
+				<span class="text-left secondary-text">50%</span>
+				<span class="text-right primary-text">50%</span>
 			</div>
 		</div>
 	</div>

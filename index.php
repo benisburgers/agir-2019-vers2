@@ -41,18 +41,17 @@
 		<!-- Site Header -->
 		<header class="main-header hidden-magic">
 			<div class="header-inner">
+				<section class="header-footer row">
+					<!-- <p class="tag">by Advance & HSG</p> -->
 
-								<section class="header-footer row">
-									<!-- <p class="tag">by Advance & HSG</p> -->
+					<a href="http://www.advance-women.ch/display/WIR/Home" target="_blank">
+						<img class="adv-logo" src="img/content/advance-logo-color.svg" alt="Advance Logo" title="Advance Logo">
+					</a>
 
-									<a href="http://www.advance-women.ch/display/WIR/Home" target="_blank">
-										<img class="adv-logo" src="img/content/advance-logo-color.svg" alt="Advance Logo" title="Advance Logo">
-									</a>
-
-									<a href="http://ccdi-unisg.ch" target="_blank">
-										<img src="img/content/hsg-logo-color.svg" alt="HSG Logo" title="HSG Logo">
-									</a>
-								</section>
+					<a href="http://ccdi-unisg.ch" target="_blank">
+						<img src="img/content/hsg-logo-color.svg" alt="HSG Logo" title="HSG Logo">
+					</a>
+				</section>
 				<h1>Advance & HSG<br />Gender Intelligence<br />Report 2018</h1>
 			</div>
 
@@ -134,11 +133,11 @@
 								<p>inspiration through best-in-class practices delivering tangible impact</p>
 							</div>
 							<section class="cta column">
-								<div class="button carmine-pink">
+								<div class="button primary-background">
 									<a href="/doc/Advance-HSG-Gender-Intelligence-Report-2018.pdf" target="_blank"><i data-feather="download"></i>Full report</a>
 								</div>
 
-								<div class="button scandal-mint">
+								<div class="button primary-background">
 									<a href="/doc/advance-hsg-report-press-release-de-fr-it.pdf" target="_blank"><i data-feather="download"></i>Press Release</a>
 								</div>
 							</section>
@@ -150,7 +149,7 @@
 			<!-- Executive Summary -->
 			<section id="executive-summary" class="no-padding-top">
 				<header class="jarallax" data-jarallax data-speed="0.2">
-					<div class="inner col size-12 stroke-white">
+					<div class="inner col size-12">
 						<h1 class="text-white single">
 							<span>Executive Summary</span>
 						</h1>
@@ -197,7 +196,7 @@
 					</article>
 				</section>
 
-				<div class="button carmine-pink anchor-link">
+				<div class="button primary-background anchor-link">
 					<a href="#topic-5"><span><i data-feather="heart"></i></span>Our Recommendations</a>
 				</div>
 			</section>
@@ -206,9 +205,9 @@
 			<section id="topic-1" class="no-padding-top no-padding-bottom">
 				<header class="jarallax" data-jarallax data-speed="0.2" data-img-position="60% 50%">
 					<div class="inner">
-						<span class="num text-dark">1</span>
+						<span class="num text-white">1</span>
 
-						<h1 class="text-dark">
+						<h1 class="text-white">
 							<span>Gender Distribution Per Management Levels</span>
 						</h1>
 					</div>
@@ -229,8 +228,8 @@
 					<div class="chart col size-12 row">
 						<div class="legend">
 							<p>Gender Distribution -<br/>All 50 Companies</p>
-							<span class="red">Women</span>
-							<span class="mint">Men</span>
+							<span class="primary">Women</span>
+							<span class="secondary">Men</span>
 						</div>
 
 						<div class="bar-chart">
@@ -284,8 +283,8 @@
 					<div class="chart vertical col size-12 row">
 						<div class="legend">
 							<p>Female Representation – Advance Members and Benchmarking Companies</p>
-							<span class="red">Advance Members</span>
-							<span class="mint">Benchmarking Companies</span>
+							<span class="primary">Advance Members</span>
+							<span class="secondary">Benchmarking Companies</span>
 						</div>
 
 						<div class="bar-chart-vertical col size-12">
@@ -302,41 +301,41 @@
 
 							<div class="bar-group row">
 								<div class="bars">
-									<div class="left  expand-bar" data-expand-direction="height" data-value="17"  data-total-value="60"><p></p></div>
+									<div class="left  expand-bar primary-background" data-expand-direction="height" data-value="17"  data-total-value="60"><p class="secondary-text"></p></div>
 
-									<div class="right expand-bar" data-expand-direction="height" data-value="9"  data-total-value="60"><p></p></div>
+									<div class="right expand-bar secondary-background" data-expand-direction="height" data-value="9"  data-total-value="60"><p class="primary-text"></p></div>
 
 									<p>Top Management</p>
 								</div>
 
 								<div class="bars">
-									<div class="left expand-bar" data-expand-direction="height" data-value="24"  data-total-value="60"><p></p></div>
+									<div class="left expand-bar primary-background" data-expand-direction="height" data-value="24"  data-total-value="60"><p class="secondary-text"></p></div>
 
-									<div class="right expand-bar" data-expand-direction="height" data-value="17"  data-total-value="60"><p></p></div>
+									<div class="right expand-bar secondary-background" data-expand-direction="height" data-value="17"  data-total-value="60"><p class="primary-text"></p></div>
 
 									<p>Middle Management</p>
 								</div>
 
 								<div class="bars">
-									<div class="left expand-bar" data-expand-direction="height" data-value="32"  data-total-value="60"><p></p></div>
+									<div class="left expand-bar primary-background" data-expand-direction="height" data-value="32"  data-total-value="60"><p class="secondary-text"></p></div>
 
-									<div class="right expand-bar" data-expand-direction="height" data-value="24"  data-total-value="60"><p></p></div>
+									<div class="right expand-bar secondary-background" data-expand-direction="height" data-value="24"  data-total-value="60"><p class="primary-text"></p></div>
 
 									<p>Lower Management</p>
 								</div>
 
 								<div class="bars">
-									<div class="left expand-bar" data-expand-direction="height" data-value="43"  data-total-value="60"><p></p></div>
+									<div class="left expand-bar primary-background" data-expand-direction="height" data-value="43"  data-total-value="60"><p class="secondary-text"></p></div>
 
-									<div class="right expand-bar" data-expand-direction="height" data-value="41"  data-total-value="60"><p></p></div>
+									<div class="right expand-bar secondary-background" data-expand-direction="height" data-value="41"  data-total-value="60"><p class="primary-text"></p></div>
 
 									<p>Lowest Management</p>
 								</div>
 
 								<div class="bars">
-									<div class="left expand-bar" data-expand-direction="height" data-value="49"  data-total-value="60"><p></p></div>
+									<div class="left expand-bar primary-background" data-expand-direction="height" data-value="49"  data-total-value="60"><p class="secondary-text"></p></div>
 
-									<div class="right expand-bar" data-expand-direction="height" data-value="57"  data-total-value="60"><p></p></div>
+									<div class="right expand-bar secondary-background" data-expand-direction="height" data-value="57"  data-total-value="60"><p class="primary-text"></p></div>
 
 									<p>Non Management</p>
 								</div>
@@ -355,8 +354,8 @@
 						<div class="legend">
 							<p>Gender Distribution - Advance Members Top Quartile</p>
 
-							<span class="red">Women</span>
-							<span class="mint">Men</span>
+							<span class="primary">Women</span>
+							<span class="secondary">Men</span>
 						</div>
 
 						<div class="bar-chart">
@@ -394,9 +393,9 @@
 			<section id="topic-2" class="no-padding-top no-padding-bottom">
 				<header class="jarallax" data-jarallax data-speed="0.2" data-img-position="50% 0%">
 					<div class="inner">
-						<span class="num text-dark">2</span>
+						<span class="num text-white">2</span>
 
-						<h1 class="text-dark">
+						<h1 class="text-white">
 							<span>Hiring</span>
 						</h1>
 					</div>
@@ -431,8 +430,8 @@
 						<div class="legend">
 							<p>Comparison of Female Hires in Management and Female Managers Already Employed – All 50 Companies </p>
 
-							<span class="red">New Female Hires in Management</span>
-							<span class="mint">Female Managers Already Employed</span>
+							<span class="primary">New Female Hires in Management</span>
+							<span class="secondary">Female Managers Already Employed</span>
 						</div>
 
 						<div class="bar-chart-horizontal small col size-8">
@@ -448,9 +447,9 @@
 
 							<div class="bar-group row">
 								<div class="bars">
-									<div class="carmine-pink expand-bar" data-value="32" data-total-value="50" data-expand-direction="width"><p></p></div>
+									<div class="primary-background secondary-text expand-bar" data-value="32" data-total-value="50" data-expand-direction="width"><p class="secondary-text"></p></div>
 
-									<div class="scandal-mint expand-bar" data-value="30" data-total-value="50" data-expand-direction="width"><p></p></div>
+									<div class="secondary-background primary-text expand-bar" data-value="30" data-total-value="50" data-expand-direction="width"><p class="primary-text"></p></div>
 								</div>
 							</div>
 						</div> <!-- /Bar-Chart -->
@@ -469,8 +468,8 @@
 						<div class="legend">
 							<p>Comparison of Female Hires in Management and Female Managers Already Employed – Advance Members Top Quartile</p>
 
-							<span class="red">New Female Hires in Management</span>
-							<span class="mint">Female Managers Already Employed</span>
+							<span class="primary">New Female Hires in Management</span>
+							<span class="secondary">Female Managers Already Employed</span>
 						</div>
 
 						<div class="bar-chart-horizontal small col size-8">
@@ -486,9 +485,9 @@
 
 							<div class="bar-group row">
 								<div class="bars">
-									<div class="carmine-pink expand-bar" data-value="42" data-total-value="50" data-expand-direction="width"><p></p></div>
+									<div class="primary-background expand-bar" data-value="42" data-total-value="50" data-expand-direction="width"><p class="secondary-text"></p></div>
 
-									<div class="scandal-mint expand-bar" data-value="37" data-total-value="50" data-expand-direction="width"><p></p></div>
+									<div class="secondary-background expand-bar" data-value="37" data-total-value="50" data-expand-direction="width"><p class="primary-text"></p></div>
 								</div>
 							</div>
 						</div> <!-- /Bar-Chart -->
@@ -500,9 +499,9 @@
 			<section id="topic-3" class="no-padding-top no-padding-bottom">
 				<header class="jarallax" data-jarallax data-speed="0.2" data-img-position="50% 0%">
 					<div class="inner">
-						<span class="num text-dark">3</span>
+						<span class="num text-white">3</span>
 
-						<h1 class="text-dark">
+						<h1 class="text-white">
 							<span>Retention and Turnover</span>
 						</h1>
 					</div>
@@ -519,8 +518,8 @@
 					<div class="chart vertical col size-12 row">
 						<div class="legend">
 							<p>Employee Turnover in Total and in Management Overall  – All 50 Companies</p>
-							<span class="red">Women</span>
-							<span class="mint">Men</span>
+							<span class="primary">Women</span>
+							<span class="secondary">Men</span>
 						</div>
 
 						<div class="bar-chart-vertical small col size-8">
@@ -533,17 +532,17 @@
 
 							<div class="bar-group row">
 								<div class="bars">
-									<div class="left expand-bar" data-expand-direction="height" data-value="12" data-total-value="20"><p></p></div>
+									<div class="left expand-bar primary-background" data-expand-direction="height" data-value="12" data-total-value="20"><p class="secondary-text"></p></div>
 
-									<div class="right expand-bar" data-expand-direction="height" data-value="11" data-total-value="20"><p></p></div>
+									<div class="right expand-bar secondary-background" data-expand-direction="height" data-value="11" data-total-value="20"><p class="primary-text"></p></div>
 
 									<p>Total</p>
 								</div>
 
 								<div class="bars">
-									<div class="left expand-bar" data-expand-direction="height" data-value="10" data-total-value="20"><p></p></div>
+									<div class="left expand-bar primary-background" data-expand-direction="height" data-value="10" data-total-value="20"><p class="secondary-text"></p></div>
 
-									<div class="right expand-bar" data-expand-direction="height" data-value="10"  data-total-value="20"><p></p></div>
+									<div class="right expand-bar secondary-background" data-expand-direction="height" data-value="10"  data-total-value="20"><p class="primary-text"></p></div>
 
 									<p>Management</p>
 								</div>
@@ -601,8 +600,8 @@
 					<div class="chart col size-12 row">
 						<div class="legend">
 							<p>Comparison of Promotions and Employees Overall – All 50 Companies</p>
-							<span class="red">Women</span>
-							<span class="mint">Men</span>
+							<span class="primary">Women</span>
+							<span class="secondary">Men</span>
 						</div>
 
 						<div class="bar-chart">
@@ -625,8 +624,8 @@
 					<div class="chart col size-12 row">
 						<div class="legend">
 							<p>Comparison of Promotions to Management and Employees in Non-Management - All 50 Companies</p>
-							<span class="red">Women</span>
-							<span class="mint">Men</span>
+							<span class="primary">Women</span>
+							<span class="secondary">Men</span>
 						</div>
 
 						<div class="bar-chart">
@@ -650,8 +649,8 @@
 					<div class="chart col size-12 wrap">
 						<div class="legend">
 							<p>Average Employment Percentage – All 50 Companies</p>
-							<span class="red">Women</span>
-							<span class="mint">Men</span>
+							<span class="primary">Women</span>
+							<span class="secondary">Men</span>
 						</div>
 					</div> <!-- /Chart -->
 					<div class="col size-12 row wrap justify-between">
@@ -693,8 +692,8 @@
 					<div class="chart col size-12 row">
 						<div class="legend">
 							<p>Average Employment Percentage by Gender and Age – All 50 Companies</p>
-							<span class="red">Women</span>
-							<span class="mint">Men</span>
+							<span class="primary">Women</span>
+							<span class="secondary">Men</span>
 						</div>
 
 						<div class="col size-8 row wrap">
@@ -718,8 +717,8 @@
 					<div class="chart col size-12 row">
 						<div class="legend">
 							<p>Average Employment Percentage - Advance Members vs. Benchmarking Companies</p>
-							<span class="red">Women</span>
-							<span class="mint">Men</span>
+							<span class="primary">Women</span>
+							<span class="secondary">Men</span>
 						</div>
 
 						<div class="col size-8 row wrap">
@@ -805,11 +804,11 @@
 						</div>
 					</article>
 
-					<div class="cta button carmine-pink">
+					<div class="cta button primary-background">
 						<a href="/doc/Advance-HSG-Gender-Intelligence-Report-2018.pdf" target="_blank"><i data-feather="download"></i>Download full report</a>
 					</div>
 
-					<div class="cta button scandal-mint">
+					<div class="cta button primary-background">
 						<a href="/doc/advance-hsg-report-press-release-de-fr-it.pdf" target="_blank"><i data-feather="download"></i>Download Press Release</a>
 					</div>
 				</section> <!-- /Topic 5.2 -->

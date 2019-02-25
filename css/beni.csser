@@ -85,64 +85,15 @@
 }
 
 .primary-background {
-  background-color: #FAB95B !important;
+  background-color: #FAB95B;
 }
 
 .secondary-background {
-  background-color: #1A3263 !important;
-}
-
-.primary-text {
-  color: #FAB95B !important;
-}
-
-.secondary-text {
-  color: #1A3263 !important;
-}
-
-.horizontal-bar-container .bar-text .text-right {
-  color: white;
-}
-
-.main-content > section .catcher .topic p, footer > section .catcher .topic p {
-  color: #1A3263;
-}
-
-.main-content > section .catcher, footer > section .catcher {
-  background-color: #1A3263;
-  color: #FAB95B;
-}
-.main-content > section .catcher article .text p span, footer > section .catcher article .text p span {
-  color: #FAB95B;
-}
-.main-content > section .catcher article .text p span:before, footer > section .catcher article .text p span:before {
-  background-color: #FAB95B;
-}
-
-.radial-progress.inner {
-  background-color: rgba(250, 185, 91, 0.25);
-}
-.radial-progress.inner span {
-  color: #1A3263 !important;
-}
-
-.radial-progress.inner .circle .mask .fill {
-  background-color: #FAB95B !important;
-}
-
-.radial-progress.outer {
-  background-color: rbga(#1A3263, 0.25);
-}
-.radial-progress.outer span {
-  color: #FAB95B;
-}
-
-.radial-progress.outer .circle .mask .fill {
   background-color: #1A3263;
 }
 
-.main-content > section .recommendation .left::before, footer > section .recommendation .left::before {
-  background-color: #FAB95B;
+.horizontal-bar-container .bar-foreground {
+  background-color: red !important;
 }
 
-/*# sourceMappingURL=beni.css.map */
+/*# sourceMappingURL=beni.csser.map */
