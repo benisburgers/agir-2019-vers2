@@ -219,7 +219,7 @@ $(document).ready(function() {
     });
     //Use for expanding bars
     function increaseNumber(elem, dataValue, current, transitionDelay) {
-      //This a recursive loop with a transitional Delay. 
+      //This a recursive loop with a transitional Delay.
       setTimeout(function () {
         elem.find('p').html(current + '%')
         current++;

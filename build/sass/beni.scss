@@ -1,5 +1,7 @@
 $primary-color: #FAB95B;
 $secondary-color: #1A3263;
+$grey: #898989;
+
 
 .col {
   &.align-left {
@@ -21,26 +23,37 @@ $secondary-color: #1A3263;
   justify-content: space-between;
 }
 .intro-sidebar {
-  padding-top: 50px;
   .driver-item {
     padding: 0;
-    h2, p {
-      margin-top: 20px;
-      margin-bottom: 0;
-      padding: 0;
+    h3 {
+      padding: 20px 0 20px;
+      margin: 0;
+      font-size: 21px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      line-height: 26px;
+      text-transform: uppercase;
+    }
+    p {
+      margin: 0;
+      padding-bottom: 20px !important;
     }
   }
   .cta {
-    margin-top: 50px;
+    margin-top: 30px;
   }
-  .button {
-    min-width: 0;
-    max-width: 100%;
-    margin-bottom: 10px;
-    background-color: $primary-color;
-    a {
-      color: black;
-    }
+}
+.button {
+  min-width: 0;
+  max-width: 100%;
+  margin-bottom: 10px;
+  background-color: $primary-color;
+  border: 1px solid $primary-color;
+  &:hover {
+    border: 1px solid $secondary-color;
+  }
+  a {
+    color: $secondary-color;
   }
 }
 .main-header {
@@ -142,5 +155,76 @@ $secondary-color: #1A3263;
 }
 
 .main-content > section .recommendation .left::before, footer > section .recommendation .left::before {
-  background-color: $primary-color; 
+  background-color: $primary-color;
+}
+
+.intro {
+  h1 {
+  	font-size: 33px;
+  	font-weight: bold;
+  	letter-spacing: 0.8px;
+  	line-height: 40px;
+    padding-bottom: 50px;
+  }
+  p {
+    padding: 0 0 50px !important;
+  }
+}
+
+a {
+  color: $primary-color;
+}
+
+#main-nav ul li.active a {
+  color: $primary-color;
+}
+#main-nav ul li a:hover {
+  color: $primary-color;
+}
+h3 {
+  margin: 0;
+  padding-bottom: 10px;
+	font-size: 21px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	line-height: 26px;
+  text-transform: uppercase;
+}
+h2 {
+  text-transform: uppercase;
+}
+.main-content > section article h2, footer > section article h2 {
+  padding: 0 0 20px;
+  letter-spacing: .69px;
+}
+footer {
+  background: $secondary-color;
+  * {
+    color: white;
+    stroke: white;
+  }
+}
+footer > section > section article a:hover {
+  color: $primary-color;
+}
+.profile-image {
+  border-radius: 50% !important;
+}
+.profile {
+  span {
+    font-weight: 200;
+  }
+}
+.main-content > section .bar-chart-vertical .chart-background p, footer > section .bar-chart-vertical .chart-background p {
+  color: $grey;
+}
+.horizontal-bar-container .title {
+  color: $grey;
+}
+
+.main-content > section .legend span, footer > section .legend span {
+  color: $grey;
+}
+.main-content > section .bar-chart-horizontal .chart-background p, footer > section .bar-chart-horizontal .chart-background p {
+  color: $grey;
 }

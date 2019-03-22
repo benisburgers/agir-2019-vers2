@@ -17,28 +17,38 @@
   margin-right: 0;
 }
 
-.intro-sidebar {
-  padding-top: 50px;
-}
 .intro-sidebar .driver-item {
   padding: 0;
 }
-.intro-sidebar .driver-item h2, .intro-sidebar .driver-item p {
-  margin-top: 20px;
-  margin-bottom: 0;
-  padding: 0;
+.intro-sidebar .driver-item h3 {
+  padding: 20px 0 20px;
+  margin: 0;
+  font-size: 21px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.intro-sidebar .driver-item p {
+  margin: 0;
+  padding-bottom: 20px !important;
 }
 .intro-sidebar .cta {
-  margin-top: 50px;
+  margin-top: 30px;
 }
-.intro-sidebar .button {
+
+.button {
   min-width: 0;
   max-width: 100%;
   margin-bottom: 10px;
   background-color: #FAB95B;
+  border: 1px solid #FAB95B;
 }
-.intro-sidebar .button a {
-  color: black;
+.button:hover {
+  border: 1px solid #1A3263;
+}
+.button a {
+  color: #1A3263;
 }
 
 .main-header {
@@ -143,6 +153,84 @@
 
 .main-content > section .recommendation .left::before, footer > section .recommendation .left::before {
   background-color: #FAB95B;
+}
+
+.intro h1 {
+  font-size: 33px;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  line-height: 40px;
+  padding-bottom: 50px;
+}
+.intro p {
+  padding: 0 0 50px !important;
+}
+
+a {
+  color: #FAB95B;
+}
+
+#main-nav ul li.active a {
+  color: #FAB95B;
+}
+
+#main-nav ul li a:hover {
+  color: #FAB95B;
+}
+
+h3 {
+  margin: 0;
+  padding-bottom: 10px;
+  font-size: 21px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+.main-content > section article h2, footer > section article h2 {
+  padding: 0 0 20px;
+  letter-spacing: 0.69px;
+}
+
+footer {
+  background: #1A3263;
+}
+footer * {
+  color: white;
+  stroke: white;
+}
+
+footer > section > section article a:hover {
+  color: #FAB95B;
+}
+
+.profile-image {
+  border-radius: 50% !important;
+}
+
+.profile span {
+  font-weight: 200;
+}
+
+.main-content > section .bar-chart-vertical .chart-background p, footer > section .bar-chart-vertical .chart-background p {
+  color: #898989;
+}
+
+.horizontal-bar-container .title {
+  color: #898989;
+}
+
+.main-content > section .legend span, footer > section .legend span {
+  color: #898989;
+}
+
+.main-content > section .bar-chart-horizontal .chart-background p, footer > section .bar-chart-horizontal .chart-background p {
+  color: #898989;
 }
 
 /*# sourceMappingURL=beni.css.map */

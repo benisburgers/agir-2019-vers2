@@ -90,7 +90,7 @@
 				</div>
 				<div class="col size-12 row wrap">
 					<div class="col size-8 text align-left">
-						<p>As the leading business association for gender equality in Switzerland, Advance has partnered with the Competence Centre for Diversity & Inclusion (CCDI) of the University of St. Gallen to accelerate the creation of gender equal workplaces. This is the second publication of the Advance & HSG Gender Intelligence Report, an integral part of the Advance program to support member companies on their diversity journey.</p>
+						<p class="intro">As the leading business association for gender equality in Switzerland, Advance has partnered with the Competence Centre for Diversity & Inclusion (CCDI) of the University of St. Gallen to accelerate the creation of gender equal workplaces. This is the second publication of the Advance & HSG Gender Intelligence Report, an integral part of the Advance program to support member companies on their diversity journey.</p>
 						<p>
 							The results of this study are complemented with insights from the CCDI based on the broader context of their research activities.
 							<br /><br />
@@ -106,10 +106,11 @@
 								<img src="img/content/profile-alkistis.jpg" alt="Alkistis Petropaki" title="Alkistis Petropaki">
 							</div>
 
-							<p>
-								<strong>Alkistis Petropaki</strong>
+							<div>
+								<span class="bold">Alkistis Petropaki</span>
+								<br>
 								<span>General Manager Advance</span>
-							</p>
+							</div>
 						</div>
 
 						<div class="profile row nowrap">
@@ -117,17 +118,18 @@
 								<img src="img/content/profile-gudrun.jpg" alt="Gudrun Sander" title="Gudrun Sander">
 							</div>
 
-							<p>
-								<strong>Prof. Dr. Gudrun Sander</strong>
+							<div>
+								<span class="bold">Prof. Dr. Gudrun Sander</span>
+								<br>
 								<span>Director Competence Centre for Diversity & Inclusion</span>
-							</p>
+							</div>
 						</div>
 					</div>
 
 					<div class="col size-3 text align-right">
 						<div class="intro-sidebar">
 							<div class="driver-item">
-								<h2>This report is unique in that it integrates three components</h2>
+								<h3>This report is unique in that it integrates three components</h3>
 								<p>relevant facts and figures for Switzerland</p>
 								<p>actionable recommendations to initiate and fine-tune D&I measures</p>
 								<p>inspiration through best-in-class practices delivering tangible impact</p>
@@ -166,31 +168,31 @@
 					</article>
 
 					<article>
-						<h2>Sample</h2>
+						<h3>Sample</h3>
 
 						<p>We analyzed the anonymized raw data of 238’700 employees, 71’600 of whom hold management positions. The sample consists of 50 Swiss-based companies across all industries. Thirty-eight are Advance member companies. Twenty-four companies participated via the St. Gallen Diversity Benchmarking, 12 of which are also Advance member companies. They are therefore part of the “Advance member companies”. The other 12 companies that participated via the St. Gallen Diversity Benchmarking form the group “Benchmarking companies”. The size of the companies varies from around 100 up to 30’000 employees. The results are based on data from 2017.</p>
 					</article>
 
 					<article>
-						<h2>Men overrepresented at the top, yet we see positive pipeline development</h2>
+						<h3>Men overrepresented at the top, yet we see positive pipeline development</h3>
 
 						<p>Whereas in non-managerial positions, the gender distribution is almost equal, men still represent over 80% of top management. With 30% women in management overall, however, we still see positive developments.</p>
 					</article>
 
 					<article>
-						<h2>Relatively more female managers hired than already employed</h2>
+						<h3>Relatively more female managers hired than already employed</h3>
 
 						<p>The positive trend in hiring continues. This is true on average and is even more pronounced for Advance members, which seem to be more attractive to female talent.</p>
 					</article>
 
 					<article>
-						<h2>Turnover rates of male and female managers converge</h2>
+						<h3>Turnover rates of male and female managers converge</h3>
 
 						<p>This relatively new trend shows that companies are improving in retaining female talent in the total workforce as well as in management.</p>
 					</article>
 
 					<article>
-						<h2>Fewer women are promoted than men</h2>
+						<h3>Fewer women are promoted than men</h3>
 
 						<p>Promotion processes still favor men. The gender gap becomes clear already on the first level of promotion from non-management to management.</p>
 					</article>
@@ -216,7 +218,7 @@
 				<!-- Topic 1.1 -->
 				<section class="light-bg">
 					<article class="col size-8">
-						<h2>Heavy overrepresentation of men at the top</h2>
+						<h2 class="uppercase">Heavy overrepresentation of men at the top</h2>
 
 						<p>Although the gender ratio is equal at the non-management level, 85% of top management is male. Already at the lowest management level, the gender gap is significant and grows with each hierarchical level. However, it is encouraging that on the first two management levels, there are at least 30% women.</p>
 					</article>
@@ -259,7 +261,7 @@
 					</div>
 
 					<article class="row col size-12 wrap">
-						<div class="big col size-5"><span>30%</span><p>is<br />a threshold<br />figure</p></div>
+						<div class="big col size-5"><span>30%</span><p>is a threshold<br/>figure</p></div>
 
 						<div class="text col size-7">
 							<p class="bold">
@@ -827,7 +829,7 @@
 					</div>
 				</header>
 
-				<section class="dark-bg col size-12">
+				<section class="col size-12">
 					<article class="">
 						<h2 class="no-padding-bottom">Commissioned by</h2>
 
