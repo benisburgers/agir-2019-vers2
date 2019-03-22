@@ -1,5 +1,5 @@
-$primary-color: #FAB95B;
-$secondary-color: #1A3263;
+$primary-color: #E64640;
+$secondary-color: #007D3F;
 $grey: #898989;
 
 
@@ -47,13 +47,18 @@ $grey: #898989;
   min-width: 0;
   max-width: 100%;
   margin-bottom: 10px;
-  background-color: $primary-color;
-  border: 1px solid $primary-color;
+  background-color: white;
+  border: 1px solid $grey;
   &:hover {
-    border: 1px solid $secondary-color;
+    border: 1px solid $grey;
+    background-color: $grey;
+
+    a {
+      color: white;
+    }
   }
   a {
-    color: $secondary-color;
+    color: $grey;
   }
 }
 .main-header {
@@ -66,7 +71,7 @@ $grey: #898989;
   margin: 0 auto;
   h1 {
     margin-top: 150px;
-    color: $primary-color;
+    color: white;
   }
 }
 .header-footer {
@@ -81,13 +86,13 @@ $grey: #898989;
 }
 
 .main-content > section > header > .inner::before, footer > section > header > .inner::before {
-  background-color: $primary-color
+  background-color: white;  
 }
 #main-nav .hamburger-box .hamburger-inner, #main-nav .hamburger-box .hamburger-inner::after, #main-nav .hamburger-box .hamburger-inner::before {
-  background-color: $primary-color;
+  background-color: $grey;
 }
 .main-content .driver-item::before, footer .driver-item::before {
-  background-color: $primary-color;
+  background-color: $grey;
 }
 .primary {
   &:before {
@@ -100,35 +105,35 @@ $grey: #898989;
   }
 }
 
-.primary-background {
-  background-color: $primary-color !important;
-}
-.secondary-background {
-  background-color: $secondary-color !important;
-}
-.primary-text {
-  color: $primary-color !important;
-}
-.secondary-text {
-  color: $secondary-color !important;
-}
+// .primary-background {
+//   background-color: $primary-color !important;
+// }
+// .secondary-background {
+//   background-color: $secondary-color !important;
+// }
+// .primary-text {
+//   color: $primary-color !important;
+// }
+// .secondary-text {
+//   color: $secondary-color !important;
+// }
 
 .horizontal-bar-container .bar-text .text-right {
   color: white;
 }
 .main-content > section .catcher .topic p, footer > section .catcher .topic p {
-  color: $secondary-color;
+  color: $grey;
 }
 .main-content > section .catcher, footer > section .catcher {
-  background-color: $secondary-color;
-  color: $primary-color;
+  background-color: $grey;
+  color: white;
   article {
     .text {
       p {
         span {
-          color: $primary-color;
+          color: white;
           &:before {
-            background-color: $primary-color;
+            background-color: white;
           }
         }
       }
@@ -138,7 +143,7 @@ $grey: #898989;
 .radial-progress.inner {
   background-color: rgba($primary-color, .25);
   span {
-    color: $secondary-color !important;
+    color: black !important;
   }
 }
 .radial-progress.inner .circle .mask .fill {
@@ -147,7 +152,7 @@ $grey: #898989;
 .radial-progress.outer {
   background-color: rbga($secondary-color, .25);
   span {
-    color: $primary-color;
+    color: black;
   }
 }
 .radial-progress.outer .circle .mask .fill {
@@ -155,7 +160,7 @@ $grey: #898989;
 }
 
 .main-content > section .recommendation .left::before, footer > section .recommendation .left::before {
-  background-color: $primary-color;
+  background-color: $grey;
 }
 
 .intro {
@@ -179,7 +184,7 @@ a {
   color: $primary-color;
 }
 #main-nav ul li a:hover {
-  color: $primary-color;
+  color: $grey;
 }
 h3 {
   margin: 0;
@@ -198,7 +203,7 @@ h2 {
   letter-spacing: .69px;
 }
 footer {
-  background: $secondary-color;
+  background: $grey;
   * {
     color: white;
     stroke: white;

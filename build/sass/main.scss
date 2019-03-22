@@ -478,11 +478,11 @@ p {
 	width: 100%;
     height: 100%;
     background-color: $dark;
-    background-image: url("../img/content/main-header-advance-key-v-extended.jpg");
+    background-image: url("../img/content/Imageshots-174.jpg");
     background-size: cover;
-    background-position: center bottom;
+    background-position: center;
     background-repeat: no-repeat;
-    padding: 100px;
+    //padding: 100px;
 
     transition: background-size .4s ease-in-out,
     			background-position .4s ease-in-out,
@@ -644,38 +644,38 @@ p {
 
 		&#executive-summary {
 			> header {
-				background-image: url('../img/content/executive-summary-header-advance-key.jpg');
+				background-image: url('../img/content/Imageshots-43.jpg');
 				background-position: right center;
 			}
 		}
 
 		&#topic-1 {
 			> header {
-				background-image: url('../img/content/topic-1-header.jpg');
+				background-image: url('../img/content/Imageshots-83.jpg');
 			}
 		}
 
 		&#topic-2 {
 			> header {
-				background-image: url('../img/content/topic-2-header.jpg');
+				background-image: url('../img/content/Imageshots-246.jpg');
 			}
 		}
 
 		&#topic-3 {
 			> header {
-				background-image: url('../img/content/topic-3-header.jpg');
+				background-image: url('../img/content/Imageshots-270.jpg');
 			}
 		}
 
 		&#topic-4 {
 			> header {
-				background-image: url('../img/content/topic-4-header.jpg');
+				background-image: url('../img/content/Imageshots-401.jpg');
 			}
 		}
 
 		&#topic-5 {
 			> header {
-				background-image: url('../img/content/recommendation-header-advance-key.jpg');
+				background-image: url('../img/content/Imageshots-444.jpg');
 			}
 		}
 
@@ -1509,7 +1509,7 @@ footer {
 
 .hidden-magic {
 	.main-header {
-		background-image: url("../img/content/main-header.jpg") !important;
+		background-image: url("../img/content/Imageshots-174.jpg") !important;
 	}
 
 	#executive-summary {
@@ -2295,13 +2295,7 @@ footer {
 			}
 		}
 	}
-}
-
-@media only screen and (min-width: 481px) and (orientation : portrait) {
-	.main-header {
-		background-position: -780px bottom;
-	}
-}
+}	
 
 @media only screen and (max-width: 480px) {
 	h1 {
@@ -2427,7 +2421,7 @@ footer {
 
 	.main-header {
 		padding: 25px;
-		background-image: url("../img/content/main-header-advance-key-v-extended-m.jpg");
+		//background-image: url("../img/content/main-header-advance-key-v-extended-m.jpg");
 
 		.cta {
 			width: 100%;
